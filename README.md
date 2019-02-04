@@ -1,4 +1,4 @@
-### Chart options
+###
 ```javascript 
 options: {
 	title: {

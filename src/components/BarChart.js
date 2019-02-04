@@ -16,11 +16,12 @@ class BarChart extends Component {
         location: 'City'
 	};
 	render() {
-        console.log(this.state.chartData)
 		return (
 			<div>
 				<Bar
-					data={this.state.chartData}
+                    data={this.state.chartData}
+                    width={100}
+                    height={50}
 					options={{
                         scales: {
                             xAxes: [{ stacked: true }],
@@ -38,7 +39,9 @@ class BarChart extends Component {
 					}}
 				/>
                 <Line
-					data={this.state.chartData}
+                    data={this.state.chartData}
+                    width={100}
+                    height={50}
 					options={{
                         scales: {
                             xAxes: [{ stacked: true }],
@@ -56,12 +59,9 @@ class BarChart extends Component {
 					}}
 				/>
                 <Pie
-					data={this.state.chartData}
+                    data={this.state.chartData}
 					options={{
-                        scales: {
-                            xAxes: [{ stacked: true }],
-                            yAxes: [{ stacked: true }]
-                        },
+                        
 						title: {
 							display: this.props.displayTitle,
 							text: 'Largest Cities In ' + this.props.location,
