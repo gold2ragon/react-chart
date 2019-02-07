@@ -23,10 +23,10 @@ class BarChart extends Component {
                     width={100}
                     height={50}
 					options={{
-                        scales: {
-                            xAxes: [{ stacked: true }],
-                            yAxes: [{ stacked: true }]
-                        },
+                        // scales: {
+                        //     xAxes: [{ stacked: true }],
+                        //     yAxes: [{ stacked: true }]
+                        // },
 						title: {
 							display: this.props.displayTitle,
 							text: 'Largest Cities In ' + this.props.location,
